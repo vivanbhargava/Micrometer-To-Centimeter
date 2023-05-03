@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Micrometer To Centimeter</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Micrometer</label>
+            <input id="inputmicro" type="number" placeholder="Micrometer" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Centimeter: <span id="outputcenti"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputcenti").innerHTML = valNum / 10000;
+        }
+    </script>
+
+</body></html>
